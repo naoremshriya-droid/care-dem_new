@@ -1,9 +1,16 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "esModuleInterop": true,
-    "lib": ["dom", "es2015"],
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["./**/*"]
+  "include": ["src"]
 }
